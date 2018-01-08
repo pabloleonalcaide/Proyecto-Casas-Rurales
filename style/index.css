@@ -1,16 +1,25 @@
+html,body,h1{
+	margin:0;
+    padding:0;
+}
 body{
 	background-color: #33cc33;
 	text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 header{
 	color:#f4f4f4;
+	background-color: #689F38;
+	margin-top: 0;
+	text-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.22);
+
 }
 main{
 	width:100%;
+}
 
-}
-#animate {
-}
 #animate > figure {
 	margin:0;
 	padding:0;
@@ -22,6 +31,7 @@ main{
 	opacity: 0;
 	position: absolute;
 	width: 100%;
+	 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	}
 
 	#animate > figure:nth-child(1) { 
@@ -40,6 +50,7 @@ main{
 	  background-image: url('../images/bg4.jpg');
 	}
 	.link{
+		margin-top: 50px;
 		animation-name: movedown;
   		animation-duration: 1s;
   		opacity: 0;
@@ -48,12 +59,14 @@ main{
 	}
 	.link a {
 		margin: 30px auto;
-  		padding: 5px;
+  		padding: 10px 30px 10px 30px;
   		text-decoration: none;
   		border-radius: 2px;
   		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 		background-color: #e67e22;
   		color: #ecf0f1;
+  		transition: 2s;
+  		font-weight: bold;
 	}
 	.link a:hover{
 		background-color: #d35400;
@@ -67,15 +80,9 @@ main{
 	 		animation-timing-function: ease-out;
 		 	opacity: 1;
 		}
-		17% {
-			opacity: 1
-			}
-	 	25% {
-	 		opacity: 0
-		}
-	 	100% {
-		 	opacity: 0
-		}
+		17% { opacity: 1 }
+	 	25% { opacity: 0 }
+	 	100% { opacity: 0 }
 	}
 
 	@keyframes movedown {
@@ -91,14 +98,24 @@ main{
 
 
 	@media only screen and (min-width: 600px){
-
+		
 		#animate > figure{
 			width: 80%;
+			height: 60%;
+			margin-left:auto;
+			margin-right:auto;
+			left:0;
+			right:0;
 		}
 	}
 
 	@media only screen and (min-width: 800px){
 		#animate > figure{
 			width: 60%;
+			left: 300px;
+			margin-left:auto;
+			margin-right:auto;
+			left:0;
+			
 		}	
 	}
