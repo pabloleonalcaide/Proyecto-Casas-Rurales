@@ -1,5 +1,9 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
-
+background-color: #DCEDC8;
 }
 header{
 	background-color: #689F38;
@@ -24,6 +28,7 @@ nav{
 	background: url(../images/nav.jpeg);
 	height: 100px;
 	padding: 30px 10px 30px 10px;
+	border-bottom:2px solid #689F38;
 }
 nav .searchBox{
 	width: 80%;
@@ -31,26 +36,88 @@ nav .searchBox{
 	padding: 10px;
 	margin:auto;	
 	text-align:center;
+
 }
 .searchBox input {
   padding:5px 5px 5px 5px;
   border:none;
+  background: none;
+  outline: none;
   border-bottom:1px solid #757575;
+}
+.searchBox input:focus{
+	border-bottom:1px solid #BDBDBD;
 }
 .searchBox input[type="search"]{
   width:60%;
+  margin: auto;
+  display:block;
 }
 .searchBox label{
 	display:none;
 }
-.searchButton{
-	display: inline-block;
+
+form button{
+	margin: 5px auto;
+	text-align:center;
+	background: #8BC34A;
+	border-radius: 1px;
+	border: 1px solid #689F38;
+	color: #f4f4f4;
+	cursor: pointer;
+	box-shadow: 0 6px 10px 0 #666;
+	width: 60%;
+	vertical-align: middle;
+	height:2rem;
+	transition:2s;
+}
+
+form button:hover{
+	box-shadow: 0 6px 14px 0 #666;
+   background-color: #689F38;
 }
 main{
-	background-color: blue;
+	margin: 5px 2px 2px 2px;
+	display: grid;
+	grid-template-rows: 1fr;
+}
+main article{
+	border-bottom:1px solid #BDBDBD;
+}
+article h5{
+	color: #757575;
+}
+.houseInfo{
+	display:grid;
+	grid-template-columns: 1fr 30%;
+	
+}
+.houseInfo img{
+	width: 100%;
+}
+.houseInfo ul{
+	list-style: none;
+}
+main i {
+	color:#689F38;
 }
 footer{
-	background-color: pink;
+	background-color: #689F38;
+	display: grid;
+	padding-top: 5px;
+	grid-template-columns: 10% 30% 50%;
+	justify-content: space-between;
+}
+footer ul {
+	list-style: none;
+	display: none;
+}
+#footerList2 a{
+
+}
+#rrssIcons img{
+	width: 2em;
+	height: auto;
 }
 @media only screen and (min-width: 600px){
 	header a h2{
@@ -65,5 +132,8 @@ footer{
 	@media only screen and (min-width: 800px){
 		header a h2{
 			display: inline;
+		}
+		main {
+			grid-template-columns: 1fr 1fr;
 		}
 	}
