@@ -1,0 +1,15 @@
+#houseDescription{
+  display: grid;
+  grid-template-areas: "a a"
+                        "b c"
+                        "d d";
+}
+#houseDescription figure{
+  grid-area: a;  
+}
+#houseDescription figure img {
+  
+}
+#houseDescription ul{
+
+}
