@@ -19,8 +19,7 @@
 	background-color: #689F38;
 	text-align:center;
 }
-#links li{
-	
+#links li{	
 	margin: 0 2px 0 2px;
 	display: inline-block;
 	height: 100%;
@@ -47,6 +46,11 @@
 }
 #houseDescription figure img {
 	width:100%;
+	transition:3s;
+}
+
+#houseDescription figure img:active {
+	transform: scale(1.1);
 }
 #houseDescription ul{
 	list-style: none;
@@ -126,13 +130,17 @@
 
 }
 h3{
+	color:#DCEDC8;
 	text-align: center;
-	margin-top: 10px;
+	margin: 10px 0 10px 0;
+	background-color: #8BC34A;
+	border-radius: 5px;
 }
 #opinion a{
 	text-decoration: none;
 	margin-right: 10px;
 	color: #689F38;
+	text-align: right;
 }
 #opinionCard{
 	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
@@ -183,6 +191,13 @@ fieldset{
 
 	#links{
 		width:100%;
-		padding: 5px 2px 5px 2px;
+		padding: 0 2px 0 2px;
+	}
+	figure > ul{
+		text-align: center
+	}
+	#opinionCard{
+		display: grid;
+		grid-template-columns:20% 1fr;
 	}
 }

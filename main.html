@@ -14,7 +14,7 @@
 </head>
 <body>
 <header>
-	<a href="./main.html" title="home"><i class="material-icons">home</i><h3>Refugios Rurales</h3></a>
+	<a href="./main.html" title="home"><i class="material-icons">home</i><h3> Refugios Rurales</h3></a>
 	<h2>Encuentra tu Refugio</h2><a href="./login.html" title="home"><i class="material-icons account">account_circle</i></a>
 </header>
 <nav>
@@ -23,7 +23,7 @@
 			<input type="search" name="search" value="" placeholder="Pedroches">
 			<label>in: </i><input type="date" name="dateIn" value="" placeholder=""></label>
 			<label>out: <input type="date" name="dateOut" value="" placeholder=""></label>
-			<label></i><input type="text" name="people" value="" placeholder="personas" id="peopleInput"></label>
+			<label></i><input type="number" min="0" max="30" name="people" value="" placeholder="personas" id="peopleInput"></label>
 			<button type="" class="searchButton">Buscar</button>
 			
 		
@@ -36,13 +36,13 @@
 	<h5>Localidad - Precio</h5>
 		<div class="houseInfo">
 			<figure>
-				<img src="./images/bg2.jpeg" alt="imagen">
+				<img src="./images/bg3low.jpg" alt="imagen">
 			</figure>
 			<ul>
 				<li><i class="material-icons">people</i> 2-10</li>
 				<li><i class="material-icons">star</i> 5</li>
-				<li title="guardar"><a href="./main.html" ><i class="material-icons " >bookmark</i></a></li>
-				<li title="reserva"><a href="./main.html" ><i class="material-icons">info</i></a></li>
+				<li ><a href="./main.html" title="guardar"><i class="material-icons " >bookmark</i></a></li>
+				<li ><a href="./house.html" title="reserva"><i class="material-icons">info</i></a></li>
 			</ul>
 		</div>
 </article>	
@@ -51,12 +51,12 @@
 	<h5>Localidad - Precio</h5>
 		<div class="houseInfo">
 			<figure>
-				<img src="./images/bg2.jpeg" alt="imagen">
+				<img src="./images/bg3low.jpg" alt="imagen">
 			</figure>
 			<ul>
 				<li><i class="material-icons">people</i> <span>2-10</span></li>
 				<li><i class="material-icons">star</i> <span>5</span></li>
-				<li><a href="./main.html" ><i class="material-icons">bookmark</i></a></li>
+				<li><a href="./house.html" title="guardar"><i class="material-icons">bookmark</i></a></li>
 				<li><a href="./main.html" ><i class="material-icons">info</i></a></li>
 			</ul>
 		</div>
@@ -66,13 +66,13 @@
 	<h5>Localidad - Precio</h5>
 		<div class="houseInfo">
 			<figure>
-				<img src="./images/bg2.jpeg" alt="imagen">
+				<img src="./images/bg3low.jpg" alt="imagen">
 			</figure>
 			<ul>
 				<li><i class="material-icons">people</i> 2-10</li>
 				<li><i class="material-icons">star</i> 5</li>
-				<li title="guardar"><a href="./main.html" ><i class="material-icons" >bookmark</i></a></li>
-				<li title="reserva"><a href="./main.html" ><i class="material-icons">info</i></a></li>
+				<li ><a href="./main.html" title="guardar"><i class="material-icons" >bookmark</i></a></li>
+				<li ><a href="./house.html" title="reservar"><i class="material-icons">info</i></a></li>
 			</ul>
 		</div>
 </article>	
@@ -81,13 +81,13 @@
 	<h5>Localidad - Precio</h5>
 		<div class="houseInfo">
 			<figure>
-				<img src="./images/bg2.jpeg" alt="imagen">
+				<img src="./images/bg3low.jpg" alt="imagen">
 			</figure>
 			<ul>
 				<li><i class="material-icons">people</i> 2-10</li>
 				<li><i class="material-icons">star</i> 5</li>
-				<li><a href="./main.html" ><i class="material-icons">bookmark</i></a></li>
-				<li><a href="./main.html" ><i class="material-icons">info</i></a></li>
+				<li><a href="./main.html" title="guardar"><i class="material-icons">bookmark</i></a></li>
+				<li><a href="./house.html" title="reservar"><i class="material-icons">info</i></a></li>
 			</ul>
 		</div>
 </article>	
@@ -96,10 +96,10 @@
 <footer>
 	<div id="footerList1">
 		<ul>
-			<li><i class="material-icons">home</i> <a href="#" title=""> Sevilla </a><a href="#" title=""> Córdoba </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Jaen </a><a href="#" title=""> Malaga </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Granada </a><a href="#" title=""> Huelva </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Cadiz </a><a href="#" title=""> Almeria </a></li>	
+			<li><i class="material-icons">home</i> <a href="#" title="sevilla"> Sevilla </a><a href="#" title="cordoba"> Córdoba </a></li>	
+			<li><i class="material-icons">home</i> <a href="#" title="jaen"> Jaen </a><a href="#" title="malaga"> Malaga </a></li>	
+			<li><i class="material-icons">home</i> <a href="#" title="granada"> Granada </a><a href="#" title="huelva"> Huelva </a></li>	
+			<li><i class="material-icons">home</i> <a href="#" title="cadiz"> Cadiz </a><a href="#" title="almeria"> Almeria </a></li>	
 		</ul>
 	</div>
 	<div id="footerList2">
@@ -111,10 +111,11 @@
 		</ul>
 	</div>
 	<div id="rrssIcons">
-		<a href="./main.html" title="home"><img src="./images/twitter.svg" alt=""></a>
-		<a href="./main.html" title="home"><img src="./images/facebook.svg" alt=""></a>
-		<a href="./main.html" title="home"><img src="./images/google-plus.svg" alt=""></a>
-		<a href="./main.html" title="home"><img src="./images/instagram.svg" alt=""></a>
+		<h6>Siguenos en nuestras Redes Sociales</h6>
+		<a href="./main.html" title="twitter"><img src="./icon/twitter.svg" alt=""></a>
+		<a href="./main.html" title="facebook"><img src="./icon/facebook.svg" alt=""></a>
+		<a href="./main.html" title="gPlus"><img src="./icon/google-plus.svg" alt=""></a>
+		<a href="./main.html" title="instagram"><img src="./icon/instagram.svg" alt=""></a>
 	</div>
 		<a href="./license.html" title="licencias">Licencias</a>
 	

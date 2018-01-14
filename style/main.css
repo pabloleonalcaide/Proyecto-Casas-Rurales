@@ -105,7 +105,9 @@ main article{
 	border:1px solid #BDBDBD;
 	padding: 5px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	transition: 5s;
 }
+
 article h5{
 	color: #757575;
 }
@@ -128,6 +130,7 @@ article h5{
 .houseInfo ul li{
 	vertical-align: middle;
 	margin-top:10px;
+	font-size: 80%;
 }	
 main i {
 	color:#689F38;
@@ -154,9 +157,7 @@ footer a {
 	text-decoration: none;
 	color: #BDBDBD;
 }
-footer > a{
 
-}
 #rrssIcons {
 		height:100%;	
 		text-align: center;
@@ -164,7 +165,10 @@ footer > a{
 #rrssIcons img{
 	width: 2em;
 	height: auto;
-
+	transition: transform 1s ease-in;
+}
+#rrssIcons img:hover{
+	transform: rotate(360deg) scale(1.1);
 }
 @media only screen and (min-width: 600px){
 
@@ -172,6 +176,9 @@ footer > a{
 		display: inline;
 		position: absolute; right: 100px;
 	}	
+	.houseInfo img{
+		content:url('./images/bg3.jpg');
+	}
 	.searchBox label{
 		font-size: 0.7rem;
 		display: inline-block;
@@ -187,7 +194,10 @@ footer > a{
 
 @media only screen and (min-width: 800px){
 
-	main {grid-template-columns: 1fr 1fr;}
+	main {
+		grid-template-columns: 40% 40%;
+		justify-content: space-around;
+	}
 	.searchBox label{
 		width:20%;
 	}
