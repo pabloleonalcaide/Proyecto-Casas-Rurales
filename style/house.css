@@ -1,15 +1,188 @@
+.green{
+	color: #689F38;
+}
+.black{
+	color: #212121;
+}
 #houseDescription{
   display: grid;
-  grid-template-areas: "a a"
-                        "b c"
-                        "d d";
+  grid-template-areas: 	"a a"
+  						"b b"
+                        "c c"
+                        "d d"
+                        "e e"
+                        "f f";
+   grid-template-columns: 50% 50%;
+}
+#links{
+	grid-area: a;
+	background-color: #689F38;
+	text-align:center;
+}
+#links li{
+	
+	margin: 0 2px 0 2px;
+	display: inline-block;
+	height: 100%;
+	background-color: #8BC34A;
+	transition: 2s;
+	border-radius: 5px 5px 0 0;
+} 
+#links li:hover{
+	*background-color: #DCEDC8;
+}
+#links li a{
+	text-decoration:none;
+	color:#DCEDC8;
+	padding:2px;
+	transition: 2s
+}
+#links li a:hover{
+	color: #FF5722;
 }
 #houseDescription figure{
-  grid-area: a;  
+  width:80%;
+  margin: auto;
+  grid-area: b;
 }
 #houseDescription figure img {
-  
+	width:100%;
 }
 #houseDescription ul{
+	list-style: none;
+}
+#list1{
+	grid-area: c;
+}
+#list2{
+	grid-area: d;
+}
+#list2 li:nth-child(even), #list1 li:nth-child(even){
+	color:green;
+}
+.cardList{
+	margin: 10px auto;
+  	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+  	width:80%;
+}
+#map{
+	grid-area: e;
+	width:80%;
+	margin: auto;
+}
 
+#form fieldset{
+	margin: 10px auto;
+  	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+  	width:80%;
+}
+#form label{
+	display:block;
+	font-size: 80%;
+}
+#form input{
+  padding:5px 5px 5px 5px;
+  border:none;
+  margin-top: 3px;
+  background: none;
+  outline: none;
+  border-bottom:1px solid #757575;
+}
+#form input:invalid{
+	border-bottom:1px solid #FF5722;
+}
+#form input:focus{
+	border-bottom:1px solid #8BC34A;
+}
+#form select{
+	margin-top: 5px;
+	padding:2px;
+	border:none;
+	line-height: 1.3;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	background-color: #DCEDC8;
+	border:1px solid #757575;
+}
+#form input[type="submit"]{
+	margin: 5px auto;
+	text-align:center;
+	background: #8BC34A;
+	border-radius: 1px;
+	color: #f4f4f4;
+	cursor: pointer;
+	box-shadow: 0 6px 10px 0 #666;
+	width: 100%;
+	vertical-align: middle;
+	height:2rem;
+	transition:2s;
+}
+#form input[type="submit"]:hover{
+	box-shadow: 0 6px 14px 0 #666;
+   background-color: #689F38;	
+}
+#opinion{
+	text-align: right;
+
+}
+h3{
+	text-align: center;
+	margin-top: 10px;
+}
+#opinion a{
+	text-decoration: none;
+	margin-right: 10px;
+	color: #689F38;
+}
+#opinionCard{
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+  	text-align: left;
+  	width:80%;
+	margin: 5px auto;
+	border: 1px solid #689F38;
+	padding: 5px 3px 5px 3px;
+}
+#opinion ul {
+	list-style: none;
+}
+#opinion figure{
+	margin: 5px;
+}
+#opinion figure img{
+	width:40px;
+	border-radius: 25px;
+	height:auto;
+  	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+
+}
+@media only screen and (min-width: 600px){
+#houseDescription{
+  grid-template-areas: 	"a a"
+  						"b b"
+                        "c d"
+                        "e e"
+                        "f f";
+}
+#form{
+	height:auto;
+}
+fieldset{
+	display:grid;
+	grid-template-columns: 40% 40%;
+	justify-content: space-between;
+}
+}
+
+@media only screen and (min-width: 800px){
+	main{
+		display: grid;
+		grid-template-rows:1fr;
+		grid-template-columns: 70%;
+		justify-content: center;
+	}
+
+	#links{
+		width:100%;
+		padding: 5px 2px 5px 2px;
+	}
 }

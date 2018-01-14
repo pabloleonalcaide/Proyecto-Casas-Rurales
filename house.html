@@ -25,64 +25,117 @@
 			<label>in: </i><input type="date" name="dateIn" value="" placeholder=""></label>
 			<label>out: <input type="date" name="dateOut" value="" placeholder=""></label>
 			<label></i><input type="text" name="people" value="" placeholder="personas"></label>
-			<button type="" class="searchButton">Buscar</button><a href="#" title=""><i class="material-icons" id ="formMore">expand_more</i></a>
+			<button type="" class="searchButton">Buscar</button>
 		
 		</form>
 	</div>
 </nav>
 <main>
-<section id="houseDescription">
-	<figure>
-		<img src="./images/bg2.jpeg" alt="beautiful place, really">	
-	</figure>	
-		<ul id="list1">
-			<li>Calefacción</li>
-			<li>Piscina</li>
-			<li>Chimenea</li>
-			<li>Porche</li>
-			<li>Wifi</li>
-		</ul>
-		<ul id="list2">
-			<li>Jardín</li>
-			<li>Barbacoa</li>
-			<li>Lavavajillas</li>
-			<li>Cochera</li>
-			<li>Asfaltado</li>
-		</ul>
-		  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="200" height="200" frameborder="0" style="border:0"></iframe>
-</section>
-<section id="form">
+	<section id="houseDescription">
+		<ul id="links">
+			<li><a href="#map">Ubicación</a></li>
+			<li><a href="#opinion">Opiniones</a></li>
+			<li><a href="#form">Reserva</a></li>
+			<li><a href="#">Fotos</a></li>
+		</ul>	
+		<figure>
+			<h4>Nombre</h4>
+			<h5>Localidad - Precio</h5>
+			<img src="./images/bg2.jpeg" alt="beautiful place, really">	
+					<h3>Características</h3>
 
-</section>
-<section id="opinion">
-
-</section>
-</main>
-<footer>
-	<div id="footerList1">
-		<ul>
-			<li><i class="material-icons">home</i> <a href="#" title=""> Sevilla </a><a href="#" title=""> Córdoba </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Jaen </a><a href="#" title=""> Malaga </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Granada </a><a href="#" title=""> Huelva </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Cadiz </a><a href="#" title=""> Almeria </a></li>	
-		</ul>
-	</div>
-	<div id="footerList2">
-		<ul>
-			<li><i class="material-icons">home</i> <a href="#" title=""> Montaña </a><a href="#" title=""> Costa </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Aventura </a><a href="#" title=""> Relax </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Pareja </a><a href="#" title=""> Niños </a></li>	
-			<li><i class="material-icons">home</i> <a href="#" title=""> Cueva </a><a href="#" title=""> Cabaña </a></li>	
-		</ul>
-	</div>
-	<div id="rrssIcons">
-		<a href="./main.html" title="home"><img src="./images/twitter.svg" alt=""></a>
-		<a href="./main.html" title="home"><img src="./images/facebook.svg" alt=""></a>
-		<a href="./main.html" title="home"><img src="./images/google-plus.svg" alt=""></a>
-		<a href="./main.html" title="home"><img src="./images/instagram.svg" alt=""></a>
-	</div>
-		<a href="./license.html" title="home"><img src="" alt="">Licencias</a>
-	
-</footer>
-</body>
+			<ul>
+				<li><i class="material-icons">local_hotel</i> Dormitorios: 3</li>
+				<li><i class="material-icons">people</i> Personas: 8</li>
+				<li><i class="material-icons">payment</i> Precio: 24Euros pers/noche</li>
+			</ul>
+		</figure>
+			<ul id="list1" class="cardList">
+				<li><i class="material-icons">check</i>Calefacción</li>
+				<li><i class="material-icons">check</i>Piscina</li>
+				<li><i class="material-icons">check</i>Chimenea</li>
+				<li><i class="material-icons">check</i>Porche</li>
+				<li><i class="material-icons">check</i>Wifi</li>
+			</ul>
+			<ul id="list2" class="cardList">
+				<li><i class="material-icons">check</i>Jardín</li>
+				<li><i class="material-icons">check</i>Barbacoa</li>
+				<li><i class="material-icons">check</i>Lavavajillas</li>
+				<li><i class="material-icons">check</i>Cochera</li>
+				<li><i class="material-icons">check</i>Asfaltado</li>
+			</ul>
+			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3148.325714239627!2d-4.752807244027305!3d37.899448840456806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbffe46580cc98fc4!2sIES+Gran+Capit%C3%A1n!5e0!3m2!1ses!2ses!4v1515835159554"  frameborder="0" allowfullscreen></iframe>
+			  
+	</section>
+	<section id="form">
+				<h3>Reserva</h3>
+		<form action="" method="get" accept-charset="utf-8">
+			<fieldset>
+				
+				<input type="text" name="" value="" pattern="[A-Za-z0-9]{1,20}" placeholder="Nombre">
+				<input type="text" name="" value="" pattern="[A-Za-z0-9]{1,20}" placeholder="Apellido">
+				<input type="tel" name="" value="" placeholder="Teléfono">
+				<input type="email" name="" value="" placeholder="Email">
+				<select name="Personas">
+					<option value="">Personas</option>
+					<option value="2">2</option>
+					<option value="4">2-4</option>
+					<option value="6">4-6</option>
+				</select>
+				<select name="Mascotas">
+					<option value="">Mascotas</option>
+					<option value="2">Si</option>
+					<option value="4">No</option>
+				</select>
+				<label>Entrada<input type="date" name="" value="" placeholder=""></label>
+				<label>Salida<input type="date" name="" value="" placeholder=""></label>
+				<label><input type="checkbox" name="" value="">Acepto los <a href="#" title="">Términos y condiciones</a></label>
+				<input type="submit" name="" value="Enviar">
+			</fieldset>
+		</form>
+	</section>
+	<section id="opinion">
+		<h3>Opiniones</h3>
+		<div id="opinionCard">
+			<figure>
+				<img src="./images/github.png">
+				<figcaption>userName</figcaption>
+			</figure>
+			<ul>
+				<li><b>"Un lugar ideal"</b></li>
+				<li>
+					<i class="material-icons green">star</i><i class="material-icons green">star</i><i class="material-icons green">star</i><i class="material-icons green">star</i><i class="material-icons black">star</i></li>
+				<li><span>Está situado en un enclave encantador, el dueño fue atento en todo momento y nos permitió llevar a nuestros dos perros, lo hemos pasado genial</span></li>
+			</ul>
+		<a href="#">mas opiniones</a>
+		</div>
+	</section>
+	</main>
+	<footer>
+		<div id="footerList1">
+			<ul>
+				<li><i class="material-icons">home</i> <a href="#" title=""> Sevilla </a><a href="#" title=""> Córdoba </a></li>	
+				<li><i class="material-icons">home</i> <a href="#" title=""> Jaen </a><a href="#" title=""> Malaga </a></li>	
+				<li><i class="material-icons">home</i> <a href="#" title=""> Granada </a><a href="#" title=""> Huelva </a></li>	
+				<li><i class="material-icons">home</i> <a href="#" title=""> Cadiz </a><a href="#" title=""> Almeria </a></li>	
+			</ul>
+		</div>
+		<div id="footerList2">
+			<ul>
+				<li><i class="material-icons">home</i> <a href="#" title=""> Montaña </a><a href="#" title=""> Costa </a></li>	
+				<li><i class="material-icons">home</i> <a href="#" title=""> Aventura </a><a href="#" title=""> Relax </a></li>	
+				<li><i class="material-icons">home</i> <a href="#" title=""> Pareja </a><a href="#" title=""> Niños </a></li>	
+				<li><i class="material-icons">home</i> <a href="#" title=""> Cueva </a><a href="#" title=""> Cabaña </a></li>	
+			</ul>
+		</div>
+		<div id="rrssIcons">
+			<a href="./main.html" title="home"><img src="./images/twitter.svg" alt=""></a>
+			<a href="./main.html" title="home"><img src="./images/facebook.svg" alt=""></a>
+			<a href="./main.html" title="home"><img src="./images/google-plus.svg" alt=""></a>
+			<a href="./main.html" title="home"><img src="./images/instagram.svg" alt=""></a>
+		</div>
+			<a href="./license.html" title="home"><img src="" alt="">Licencias</a>
+		
+	</footer>
+	</body>
 </html>
