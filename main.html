@@ -23,17 +23,23 @@
 			<input type="search" name="search" value="" placeholder="Pedroches">
 			<label>in: </i><input type="date" name="dateIn" value="" placeholder=""></label>
 			<label>out: <input type="date" name="dateOut" value="" placeholder=""></label>
-			<label></i><input type="number" min="0" max="30" name="people" value="" placeholder="personas" id="peopleInput"></label>
+			<label id="labelPeople"><input type="number" min="0" max="30" name="people" value="" placeholder="personas" id="peopleInput"></label>
 			<button type="" class="searchButton">Buscar</button>
-			
-		
 		</form>
 	</div>
 </nav>
+<div>
+<select name="" class="filter" id="filterSelect">
+	<option value="">Ordenar por &#8594;</option>
+	<option value="price">Precio</option>
+	<option value="rooms">Habitaciones</option>
+	<option value="ranking">Puntuación</option>
+</select>
+</div>
 <main>
 <article>
-	<h4>Nombre</h4>
-	<h5>Localidad - Precio</h5>
+	<h4>Villa Include</h4>
+	<h5>Córdoba - 30 Euros</h5>
 		<div class="houseInfo">
 			<figure>
 				<img src="./images/bg3low.jpg" alt="imagen">
@@ -41,14 +47,15 @@
 			<ul>
 				<li><i class="material-icons">people</i> 2-10</li>
 				<li><i class="material-icons">star</i> 5</li>
-				<li ><a href="./main.html" title="guardar"><i class="material-icons " >bookmark</i></a></li>
+				<li><i class="material-icons">network_wifi</i></li>
+				<li ><a href="./main.html" title="guardar"><i class="material-icons" >bookmark</i></a></li>
 				<li ><a href="./house.html" title="reserva"><i class="material-icons">info</i></a></li>
 			</ul>
 		</div>
 </article>	
 <article>
-	<h4>Nombre</h4>
-	<h5>Localidad - Precio</h5>
+	<h4>Casa Commit</h4>
+	<h5>Origin - 40 Euros</h5>
 		<div class="houseInfo">
 			<figure>
 				<img src="./images/bg3low.jpg" alt="imagen">
@@ -56,14 +63,15 @@
 			<ul>
 				<li><i class="material-icons">people</i> <span>2-10</span></li>
 				<li><i class="material-icons">star</i> <span>5</span></li>
+				<li><i class="material-icons">signal_wifi_off</i></li>
 				<li><a href="./house.html" title="guardar"><i class="material-icons">bookmark</i></a></li>
 				<li><a href="./main.html" ><i class="material-icons">info</i></a></li>
 			</ul>
 		</div>
 </article>	
 <article>
-	<h4>Nombre</h4>
-	<h5>Localidad - Precio</h5>
+	<h4>Finca Docker</h4>
+	<h5>Kubernetes - 25 Euros</h5>
 		<div class="houseInfo">
 			<figure>
 				<img src="./images/bg3low.jpg" alt="imagen">
@@ -71,14 +79,15 @@
 			<ul>
 				<li><i class="material-icons">people</i> 2-10</li>
 				<li><i class="material-icons">star</i> 5</li>
+				<li><i class="material-icons">signal_wifi_off</i></li>
 				<li ><a href="./main.html" title="guardar"><i class="material-icons" >bookmark</i></a></li>
 				<li ><a href="./house.html" title="reservar"><i class="material-icons">info</i></a></li>
 			</ul>
 		</div>
 </article>	
 <article>
-	<h4>Nombre</h4>
-	<h5>Localidad - Precio</h5>
+	<h4>Casas del Py</h4>
+	<h5>Pithonlandia - 30 Euros</h5>
 		<div class="houseInfo">
 			<figure>
 				<img src="./images/bg3low.jpg" alt="imagen">
@@ -86,12 +95,14 @@
 			<ul>
 				<li><i class="material-icons">people</i> 2-10</li>
 				<li><i class="material-icons">star</i> 5</li>
+				<li><i class="material-icons">network_wifi</i></li>
 				<li><a href="./main.html" title="guardar"><i class="material-icons">bookmark</i></a></li>
 				<li><a href="./house.html" title="reservar"><i class="material-icons">info</i></a></li>
 			</ul>
 		</div>
 </article>	
-
+<span></span>
+<a href="#" title="" id="seeMore">ver más<i class="material-icons">arrow_forward</i></a>
 </main>
 <footer>
 	<div id="footerList1">
@@ -116,8 +127,8 @@
 		<a href="./main.html" title="facebook"><img src="./icon/facebook.svg" alt=""></a>
 		<a href="./main.html" title="gPlus"><img src="./icon/google-plus.svg" alt=""></a>
 		<a href="./main.html" title="instagram"><img src="./icon/instagram.svg" alt=""></a>
+		<span><a href="./license.html" title="license">Licencias</a> | <a href="http://www.github.com/pabloleonalcaide" title="author">Diseño</a></span>
 	</div>
-		<a href="./license.html" title="licencias">Licencias</a>
 	
 </footer>
 </body>

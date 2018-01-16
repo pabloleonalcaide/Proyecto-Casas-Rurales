@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./style/house.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="./js/form.js" type="text/javascript" charset="utf-8" async defer></script>
 	<title>Refugios Rurales - Pablo León</title>
 </head>
 <body>
@@ -33,36 +34,36 @@
 <main>
 	<section id="houseDescription">
 		<ul id="links">
+			<li><a href="#" title="previous"><i class="material-icons">chevron_left</i></a></li>
 			<li><a href="#map" title="ubicacion">Ubicación</a></li>
 			<li><a href="#opinion" title="opiniones">Opiniones</a></li>
 			<li><a href="#form" title="reserva">Reserva</a></li>
 			<li><a href="#" title="fotos">Fotos</a></li>
+			<li><a href="#" title="next"><i class="material-icons">chevron_right</i></a></li>
+
 		</ul>	
 		<figure>
-			<h4>Nombre</h4>
-			<h5>Localidad - Precio</h5>
+			<h3>La casita del desarrollador</h3>
+			<h4>Silicon Valley - 40 Euros</h4>
 			<img src="./images/bg3.jpg" alt="beautiful place, really">	
 					<h3>Características</h3>
-
-			<ul>
-				<li><i class="material-icons">local_hotel</i> Dormitorios: 3</li>
-				<li><i class="material-icons">people</i> Personas: 8</li>
-				<li><i class="material-icons">payment</i> Precio: 24Euros pers/noche</li>
-			</ul>
 		</figure>
 			<ul id="list1" class="cardList">
-				<li><i class="material-icons">check</i>Calefacción</li>
-				<li><i class="material-icons">check</i>Piscina</li>
-				<li><i class="material-icons">check</i>Chimenea</li>
-				<li><i class="material-icons">check</i>Porche</li>
-				<li><i class="material-icons">check</i>Wifi</li>
+				<li><i class="material-icons">payment</i> Precio: 24Euros pers/noche</li>
+				<li><i class="material-icons">local_hotel</i> Dormitorios: 3</li>
+				<li><i class="material-icons">people</i> Personas: 8</li>
+				<li><i class="material-icons">av_timer</i>Calefacción radial</li>
+				<li><i class="material-icons">pool</i>Piscina exterior</li>
+				<li><i class="material-icons">network_wifi</i>Wifi</li>
 			</ul>
 			<ul id="list2" class="cardList">
-				<li><i class="material-icons">check</i>Jardín</li>
-				<li><i class="material-icons">check</i>Barbacoa</li>
-				<li><i class="material-icons">check</i>Lavavajillas</li>
-				<li><i class="material-icons">check</i>Cochera</li>
-				<li><i class="material-icons">check</i>Asfaltado</li>
+				<li><i class="material-icons">local_florist</i>Zona de jardín</li>
+				<li><img src="./icon/fireplace.svg" class="icons">Chimenea de pellets</li>
+				<li><i class="material-icons">store</i>Porche delantero</li>
+				<li><img src="./icon/grill.svg" class="icons"></i>Barbacoa de leña</li>
+				<li><i class="material-icons">local_laundry_service</i>Lavavajillas</li>
+				<li><i class="material-icons">local_parking</i>Parking</li>
+
 			</ul>
 			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3148.325714239627!2d-4.752807244027305!3d37.899448840456806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbffe46580cc98fc4!2sIES+Gran+Capit%C3%A1n!5e0!3m2!1ses!2ses!4v1515835159554"  frameborder="0" allowfullscreen></iframe>
 			  
@@ -72,10 +73,10 @@
 		<form action="" method="get" accept-charset="utf-8">
 			<fieldset>
 				
-				<input type="text" name="" value="" pattern="[A-Za-z0-9]{1,20}" placeholder="Nombre">
-				<input type="text" name="" value="" pattern="[A-Za-z0-9]{1,20}" placeholder="Apellido">
-				<input type="tel" name="" value="" placeholder="Teléfono">
-				<input type="email" name="" value="" placeholder="Email">
+				<input type="text" name="" value="" pattern="[A-Za-z0-9]{1,20}" id="name" placeholder="Nombre">
+				<input type="text" name="" value="" pattern="[A-Za-z0-9]{1,20}" id="subname" placeholder="Apellido">
+				<input type="tel" name="" value="" placeholder="Teléfono" id="phone">
+				<input type="email" name="" value="" placeholder="Email" id="mail">
 				<select name="Personas">
 					<option value="">Personas</option>
 					<option value="2">2</option>
@@ -87,8 +88,8 @@
 					<option value="2">Si</option>
 					<option value="4">No</option>
 				</select>
-				<label>Entrada<input type="date" name="" value="" placeholder=""></label>
-				<label>Salida<input type="date" name="" value="" placeholder=""></label>
+				<label><i class="material-icons">flight_land</i> <input type="date" name="" value="" placeholder=""></label>
+				<label><i class="material-icons">flight_takeoff</i><input type="date" name="" value="" placeholder=""></label>
 				<label><input type="checkbox" name="" value="">Acepto los <a href="#" title="">Términos y condiciones</a></label>
 				<input type="submit" name="" value="Enviar">
 			</fieldset>
@@ -129,12 +130,13 @@
 			</ul>
 		</div>
 		<div id="rrssIcons">
+				<h6>Siguenos en nuestras Redes Sociales</h6>
 			<a href="./main.html" title="home"><img src="./icon/twitter.svg" alt=""></a>
 			<a href="./main.html" title="home"><img src="./icon/facebook.svg" alt=""></a>
 			<a href="./main.html" title="home"><img src="./icon/google-plus.svg" alt=""></a>
 			<a href="./main.html" title="home"><img src="./icon/instagram.svg" alt=""></a>
+			<span><a href="./license.html" title="license">Licencias</a> | <a href="http://www.github.com/pabloleonalcaide" title="author">Diseño</a></span>
 		</div>
-			<a href="./license.html" title="home"><img src="" alt="">Licencias</a>
 		
 	</footer>
 	</body>

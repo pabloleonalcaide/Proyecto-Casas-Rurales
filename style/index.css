@@ -1,3 +1,4 @@
+/* Pablo Leon Alcaide */
 html,body,h1{
 	margin:0;
     padding:0;
@@ -23,7 +24,7 @@ main{
 #animate > figure {
 	margin:0;
 	padding:0;
-	animation: carousel 20s linear 0s;
+	animation: carousel 15s linear 0s;
 	background-size: 100% 100%;
 	background-position: center center;
 	color: transparent;
@@ -54,7 +55,7 @@ main{
 		animation-name: movedown;
   		animation-duration: 1s;
   		opacity: 0;
-		animation-delay:18s;
+		animation-delay:15s;
 		animation-fill-mode: forwards;
 	}
 	.link a {

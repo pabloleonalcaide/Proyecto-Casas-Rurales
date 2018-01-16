@@ -1,9 +1,10 @@
+/** Pablo Leon Alcaide */
 *{
 	margin: 0;
 	padding: 0;
 }
 body{
-	background-color: #DCEDC8;
+	background-color: #f4f4f4;
     font-family: 'Roboto', sans-serif;
 }
 header{
@@ -51,11 +52,18 @@ nav .searchBox{
 
 }
 .searchBox input {
-  padding:5px 5px 5px 5px;
+  padding:8px 5px 5px 5px;
   border:none;
   background: none;
   outline: none;
   border-bottom:1px solid #757575;
+}
+#labelPeople{
+	display:block;
+}
+#peopleInput{
+width: 60%;
+margin:auto;
 }
 .searchBox input:focus{
 	border-bottom:1px solid #BDBDBD;
@@ -88,7 +96,17 @@ form button:hover{
 	box-shadow: 0 6px 14px 0 #666;
    background-color: #689F38;
 }
-
+.filter{
+	background-color: transparent;
+	border:none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    margin:5px;
+    text-overflow: '';
+    color:#689F38;
+    border-bottom: 1px solid #bdbdbd;
+}
 main{
 	display: grid;
 	grid-template-rows: 1fr;
@@ -100,16 +118,18 @@ main i, main span  {
 main i {
 	font-weight: bold;;
 }
+
 main article{
 	margin: 10px 5px 5px 10px;
 	border:1px solid #BDBDBD;
 	padding: 5px;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 10px 20px rgba(104, 159, 56,0.19), 0 6px 6px rgba(104, 159, 56,0.23);
 	transition: 5s;
 }
 
 article h5{
 	color: #757575;
+	border-bottom:1px solid #bdbdbd;
 }
 .houseInfo{
 	display:grid;
@@ -132,13 +152,28 @@ article h5{
 	margin-top:10px;
 	font-size: 80%;
 }	
+.houseInfo ul li:nth-child(5) a i{
+	color:#f4f4f4;
+	border-radius:50px;
+	background-color:#689F38;
+	font-size: 28px;
+}
+.houseInfo ul li:nth-child(5) a i:hover{
+	background-color: #ff5722;
+}
 main i {
-	color:#689F38;
+	color:#8BC34A;
 	font-size: 1vmin;
 }
  a i:hover{
 	color:#FF5722;
 	transform: scale(1.1);
+}
+
+#seeMore{
+	text-decoration: none;
+	color: #689F38;
+	text-align:right;
 }
 footer{	
 	background: #689F38;
@@ -158,6 +193,16 @@ footer a {
 	color: #BDBDBD;
 }
 
+footer a:hover{
+	color:#FF5722;
+}
+footer span{
+	display: block;
+	text-align:center;
+}
+#rrssIcons h6{
+	margin-bottom: 5px;
+}
 #rrssIcons {
 		height:100%;	
 		text-align: center;
@@ -176,6 +221,9 @@ footer a {
 		display: inline;
 		position: absolute; right: 100px;
 	}	
+	#labelPeople{
+	display:inline-block;
+}
 	.houseInfo img{
 		content:url('./images/bg3.jpg');
 	}
